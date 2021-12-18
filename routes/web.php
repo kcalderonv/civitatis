@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ActividadController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +16,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/actividades',[ActividadController::class,'index']);
-Route::get('/actividades/{actividad}',[ActividadController::class,'show']);
+Route::get('/actividades/{id}',[ActividadController::class,'show']);
+
+Route::get('/user',[AuthController::class,'user']);
+Route::post('/login',[AuthController::class,'login']);
+Route::post('/logout',[AuthController::class,'logout']);
+Route::post('/registro',[AuthController::class,'registro']);
+
 
 Route::get('/{any}',function (){
     return view('app');

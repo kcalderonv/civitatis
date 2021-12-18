@@ -6,31 +6,30 @@
         <b-carousel-slide
           img-src="https://cdn2.civitatis.com/images/banners/home-07.jpg"
         >
-          <h1>LLENA TU VIAJE</h1>
+          <h3>LLENA TU VIAJE</h3>
         </b-carousel-slide>
         <b-carousel-slide
           img-src="https://cdn2.civitatis.com/images/banners/home-06.jpg"
         >
-          <h1>Excursiones en español por todo el mundo</h1>
+          <h3>Excursiones en español por todo el mundo</h3>
         </b-carousel-slide>
         <b-carousel-slide
           img-src="https://cdn2.civitatis.com/images/banners/home-07.jpg"
         >
-          <h1>Los mejores actividades en civitatis</h1>
+          <h3>Los mejores actividades en civitatis</h3>
         </b-carousel-slide>
         <b-carousel-slide
           img-src="https://cdn2.civitatis.com/images/banners/home-04.jpg"
         >
-          <h1>
-            Si os apasionado de las actividades, no esperes mas Civitatis es tu
-            unica opcion
-          </h1>
+          <h3>
+            Si os apasionado de las actividades, no esperes mas.
+          </h3>
         </b-carousel-slide>
       </b-carousel>
       <div class="busqueda">
         <b-row class="d-flex align-items-center h-100">
-          <b-col cols="11" md="10" xl="9" class="m-auto">
-            <b-card class="py-5">
+          <b-col cols="12" lg="10" xl="9" class="m-auto">
+            <b-card class="py-3">
               <b-row>
                 <b-col cols="12">
                     <h3 class="text-center">Consulta las actividades en la fecha que eligas</h3>
@@ -44,7 +43,7 @@
                   <b-input
                     type="number"
                     min="1"
-                    max="10"
+                    max="20"
                     placeholder="cantidad de personas"
                   ></b-input>
                 </b-col>
@@ -156,11 +155,14 @@ h1 {
 .slider {
   position: relative;
 }
+.slider img {
+    height: 100% !important;
+}
 .busqueda {
   position: absolute;
   top: 0px;
   width: 100%;
-  height: 350px;
+  height: 100%;
 }
 
 .btn-success {

@@ -13,7 +13,7 @@ class CreateActividadSubActividadsTable extends Migration
      */
     public function up()
     {
-        Schema::create('actividad_sub_actividads', function (Blueprint $table) {
+        Schema::create('actividad_sub_actividad', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('actividad_id');
             $table->unsignedBigInteger('sub_actividad_id');

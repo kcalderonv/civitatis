@@ -13,8 +13,8 @@ class ActividadController extends Controller
         return Actividad::where('d_fin','>',Carbon::now())->orderBy('calificacion','desc')->orderBy('d_inicio','asc')->get();
     }
 
-    public function show(Actividad $actividad)
+    public function show($id)
     {
-        return $actividad;
+        return Actividad::with('subactividad')->where('id',$id)->first();
     }
 }
