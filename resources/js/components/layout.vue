@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main">
         <!-- cabecera -->
         <Nav></Nav>
         <!-- cuerpo -->
@@ -33,4 +33,11 @@ export default {
     },
 }
 </script>
+<style scoped>
+
+main {
+    min-height: calc(100vh - 110px);
+}
+
+</style>
 

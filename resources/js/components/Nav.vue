@@ -37,9 +37,11 @@ export default {
     methods: {
         ...mapActions(["setUser"]),
         salir() {
-            this.axios.post('logout');
+            this.axios.post('/logout');
             this.setUser(null);
-            this.$router.push('/')
+            if(this.$route.path != "/"){
+                this.$router.push('/');
+            }
         }
     },
 }

@@ -49,7 +49,7 @@
                     trim
                 ></b-form-input>
                 </b-form-group>
-                <b-form-group label="Nombres">
+                <b-form-group label="Password">
                 <b-form-input
                     v-model="form.password"
                     type="password"

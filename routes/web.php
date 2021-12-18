@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ActividadController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ReservaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,8 +21,12 @@ Route::get('/actividades/{id}',[ActividadController::class,'show']);
 
 Route::get('/user',[AuthController::class,'user']);
 Route::post('/login',[AuthController::class,'login']);
-Route::post('/logout',[AuthController::class,'logout']);
 Route::post('/registro',[AuthController::class,'registro']);
+
+Route::middleware(['auth'])->group(function(){
+    Route::post('/logout',[AuthController::class,'logout']);
+    Route::post('/reservar',[ReservaController::class,'store']);
+});
 
 
 Route::get('/{any}',function (){
