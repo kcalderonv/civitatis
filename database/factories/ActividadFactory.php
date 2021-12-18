@@ -26,6 +26,8 @@ class ActividadFactory extends Factory
             'precio'=>$this->faker->numberBetween(50,200),
             'd_inicio'=>$inicio,
             'd_fin'=>$fin,
+            'calificacion'=>$this->faker->numberBetween(1,5),
+
         ];
     }
 }

@@ -20,6 +20,7 @@ class CreateActividadsTable extends Migration
             $table->double('precio',10,4);
             $table->date('d_inicio');
             $table->date('d_fin');
+            $table->tinyInteger('calificacion')->default(0);
             $table->timestamps();
         });
     }

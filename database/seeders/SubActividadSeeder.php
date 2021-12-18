@@ -14,6 +14,6 @@ class SubActividadSeeder extends Seeder
      */
     public function run()
     {
-        SubActividad::factory(30)->create();
+        SubActividad::factory(20)->create();
     }
 }
