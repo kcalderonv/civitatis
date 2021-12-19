@@ -1,6 +1,5 @@
-## About Civitatis
--
-Esta es una practica de  Civitatis
+## Esta es una practica de  Civitatis
+Esta practica fue desarrollado en Laravel 8, integrado Vue(Laravel-mix) con Bootstrap-Vue, como base de datos mysql.
 
 Pre - Requisitos
   - Tener instalado Composer "https://getcomposer.org/"
@@ -10,6 +9,7 @@ Pre - Requisitos
 
 Acciones
 1. ingresar  por comando "composer install"
+1. ingresar  por comando "php artisan key:generate"
 2. crear la bd civitatis
 3. ingresar por comando "php artisan migrate"
 4. creamos data de prueba "php artisan db:seed"
