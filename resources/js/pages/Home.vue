@@ -83,7 +83,7 @@
       <b-container class="py-5">
         <b-row>
           <b-col cols="12">
-            <h3 class="text-center">
+            <h3 class="text-center text-white">
               Actividades disponibles en la fecha de selección
             </h3>
             <hr />
@@ -137,7 +137,7 @@
               :per-page="perPage"
             ></b-pagination>
           </b-col>
-          <h5 class="text-center" v-if="men_busqueda">
+          <h5 class="text-center text-white" v-if="men_busqueda">
             Lo Sentimos no tenemos actividades para la fecha seleccionada.
           </h5>
         </b-row>
