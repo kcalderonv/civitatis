@@ -15,6 +15,7 @@ Acciones
 4. creamos data de prueba "php artisan db:seed"
 5. por ultimo para levantar el proyecto "php artisan serve"
 
-## License
+#### github
+https://github.com/kcalderonv/civitatis
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## License
