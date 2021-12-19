@@ -63,7 +63,7 @@
               </h4>
               <hr />
               <b-button v-if="user" type="submit" variant="info"
-                >Reservar</b-button
+                >Comprar</b-button
               >
               <b-button
                 to="/ingresar"
@@ -148,7 +148,7 @@ export default {
         num_personas: this.form.num_personas,
       };
       this.setReserva(payload);
-      this.$router.push("/registrar");
+      this.$router.push("/ingresar");
     },
     async submit() {
         try {

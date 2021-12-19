@@ -16,7 +16,7 @@ class ActividadSeeder extends Seeder
     public function run()
     {
         Actividad::factory(50)->create()->each(function (Actividad $actividad){
-            ActividadSubActividad::factory(random_int(1,10))->create([
+            ActividadSubActividad::factory(random_int(5,20))->create([
                 'actividad_id' => $actividad->id,
             ]);
         });

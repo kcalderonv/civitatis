@@ -10,4 +10,9 @@ class Reserva extends Model
     use HasFactory;
 
     protected $guarded = [];
+
+    public function actividad()
+    {
+        return $this->belongsTo(Actividad::class);
+    }
 }

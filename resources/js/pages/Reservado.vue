@@ -8,10 +8,12 @@
                 <h4 class="text-center">Reserva exitosa</h4>
             </div>
             <hr>
+            <h5 class="text-center">{{resp.actividad}}</h5>
             N° Reserva: {{resp.id}} <br>
+            Actividad: {{resp.id}} <br>
             N° Personas: {{resp.num_personas}} <br>
-            Precio: {{resp.precio}} <br>
-            Total: {{resp.total}} <br>
+            Precio: $ {{resp.precio}} <br>
+            Total: $ {{resp.total}} <br>
             Fecha Actividad: <Fecha :fecha="resp.fecha_actividad"></Fecha> <br>
             <hr>
             <small>Recuerde presentar su codigo el dia de actividad</small>

@@ -17,4 +17,13 @@ class ActividadController extends Controller
     {
         return Actividad::with('subactividad')->where('id',$id)->first();
     }
+
+    public function search(Request $request)
+    {
+        $actividades = Actividad::where('d_inicio','<=',$request->fecha_actividad)
+        ->where('d_fin','>=',$request->fecha_actividad)
+        ->orderBy('calificacion','desc')
+        ->get();
+        return $actividades;
+    }
 }

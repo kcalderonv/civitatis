@@ -18,14 +18,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/actividades',[ActividadController::class,'index']);
 Route::get('/actividades/{id}',[ActividadController::class,'show']);
+Route::post('/search',[ActividadController::class,'search']);
 
 Route::get('/user',[AuthController::class,'user']);
 Route::post('/login',[AuthController::class,'login']);
 Route::post('/registro',[AuthController::class,'registro']);
 
+
 Route::middleware(['auth'])->group(function(){
     Route::post('/logout',[AuthController::class,'logout']);
     Route::post('/reservar',[ReservaController::class,'store']);
+    Route::post('/reservas',[ReservaController::class,'index']);
 });
 
 
